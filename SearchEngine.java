@@ -25,9 +25,6 @@ class Handler implements URLHandler {
     public String handleRequest(URI url) {
         if (url.getPath().equals("/")) {
             return String.format("Enter /add query into search bar then use /search to search for added items: ", list.toString());
-        //} else if (url.getPath().equals("/increment")) {
-            // num += 1;
-            //return String.format("Number incremented!");
         } else if (url.getPath().contains("/add")){
             System.out.println("Path: " + url.getPath());
             
